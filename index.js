@@ -35,11 +35,11 @@ Metalsmith(__dirname)
 // into our template, using the Frontmatter
 // properties as template variables.
 .use(layouts())
-.use(browserSync({
-    server: "./build",
-    files: ["src/**/*.md", "layouts/**/*.hbs"]
-})
-)
+// .use(browserSync({
+//     server: "./build",
+//     files: ["src/**/*.md", "layouts/**/*.hbs"]
+// })
+// )
 // And tell Metalsmith to fire it all off.
 .build(function(err, files) {
     if (err) { throw err; }
